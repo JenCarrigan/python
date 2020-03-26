@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Other
+python-44e42-3b80ec18c6f3.json

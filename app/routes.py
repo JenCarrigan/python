@@ -1,6 +1,7 @@
-from app import app
+from app import app, api
+from flask_restplus import Resource
 
-@app.route('/')
-@app.route('/index')
-def index():
-  return "Hello World!"
+@api.route('/')
+class Hello(Resource):
+  def get(self):
+    return {'hello': 'world'}
